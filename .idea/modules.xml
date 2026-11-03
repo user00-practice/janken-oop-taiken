@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/step1-cui/step1-cui.iml" filepath="$PROJECT_DIR$/step1-cui/step1-cui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step2-gui-oop/step2-gui-oop.iml" filepath="$PROJECT_DIR$/step2-gui-oop/step2-gui-oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/step3-multi/step3-multi.iml" filepath="$PROJECT_DIR$/step3-multi/step3-multi.iml" />
+    </modules>
+  </component>
+</project>
