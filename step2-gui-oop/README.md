@@ -22,7 +22,7 @@
 | --- | --- | --- | --- |
 | TODO A | `Hand.java` | `beats`：この手が相手の手に勝つなら true を返す | switch式で、この手（this）ごとに分ける |
 | TODO B | `CpuPlayer.java` | `decideHand`：手をランダムに決める | `Hand.values()` で3つの手の配列が手に入る |
-| TODO C | `JankenGame.java` | `play`：勝敗を判定して、勝った人を返す | TODO A で作った `beats` を使う |
+| TODO C | `JankenGame.java` | `play`：勝敗を判定して、勝った人をリストで返す | TODO A で作った `beats` を使う。あいこなら勝った人は0人なので、空のリスト `List.of()` を返す |
 
 ## できたら確認
 

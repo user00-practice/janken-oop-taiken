@@ -31,4 +31,4 @@ STEP3 に入る前に投影します。CUI版のまま人数を増やすと、�
 
 ## STEP3 で変更するのは JankenGame だけ
 
-`step2-gui-oop` と `step3-multi` を比べると、`Hand`・`Player`・`CpuPlayer`・`Main` は1行も変わっていません（画面の `MainFrame` は人数分のラベルを作るよう変更済みの状態で配っています）。受講者が書き換えるのは `JankenGame` だけです。まとめのときに、IntelliJ でファイルを比較して見せると効果的です（2つのファイルを選んで、ファイルの比較〈Ctrl+D〉）。
+`step2-gui-oop` と `step3-multi` を比べると、`Hand`・`Player`・`CpuPlayer`・`Main` は1行も変わっていません（画面の `MainFrame` は人数分のラベルを作るよう変更済みの状態で配っています）。受講者が書き換えるのは `JankenGame` だけです。`play` の戻り値の型（勝った人のリスト。あいこなら空）も STEP2 と同じなので、使う側の書き方は人数が増えても変わりません。まとめのときに、IntelliJ でファイルを比較して見せると効果的です（2つのファイルを選んで、ファイルの比較〈Ctrl+D〉）。

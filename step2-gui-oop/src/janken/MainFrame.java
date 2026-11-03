@@ -9,6 +9,8 @@ import javax.swing.SwingConstants;
 import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * じゃんけんゲーム（GUI版）の画面を作るクラス。
@@ -64,16 +66,20 @@ public class MainFrame extends JFrame {
 
     /** グー・チョキ・パーのボタンが押されたときの処理。 */
     private void onHand(Hand hand) {
-        Player winner = game.play(hand);
+        List<Player> winners = game.play(hand);
 
         Player you = game.getYou();
         Player cpu = game.getCpu();
         youLabel.setText(you.getName() + "：" + label(you.getHand()));
         cpuLabel.setText(cpu.getName() + "：" + label(cpu.getHand()));
-        if (winner == null) {
-            resultLabel.setText("あいこ");
+        if (winners.isEmpty()) {
+            resultLabel.setText("あいこ");     // 勝った人が0人
         } else {
-            resultLabel.setText(winner.getName() + "の勝ち！");
+            List<String> names = new ArrayList<>();
+            for (Player winner : winners) {
+                names.add(winner.getName());
+            }
+            resultLabel.setText(String.join("・", names) + "の勝ち！");
         }
         updateScore();
     }
